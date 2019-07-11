@@ -1,4 +1,4 @@
-used a template literal to make strings easier, I had to use the chainToSwitch
+used a template literal to make strings easier, I had to use the hint
 
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
