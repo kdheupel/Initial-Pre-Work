@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<style>
+  {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	color: #424242;
+	line-height: 1.4;
+    }
+
+/* Fonts */
+
+h2 {
+    font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+	font-size: 25px;
+}
+
+.container {
+	margin: 2em auto;
+	max-width: 630px;
+	text-align: left;
+    }
+
+.black-background {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 100px;
+    line-height: 100px;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 220px;
+}
+
+#progressbar {
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: #777;
+}
+
+#progressbar>div {
+    background-color: red;
+    width: 75%;
+    height: 20px;
+}
+
+ #triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid black;
+      position: absolute;
+      left: 80%;
+      right: 20%;
+}
+
+</style>
+<html>
+
+   <head>
+
+  <meta charset="utf-8">
+  <title>HTML/CSS Prototype</title>
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+  </head>
+
+<body>
+<div class="container">
+ <body data-gr-c-s-loaded="true">
+    <div class="black-background">
+      <h2>$167 still needed for this project</h2>
+    </div>
+    <div class="content">
+        <div class="info">
+            <div class="loadingBarOuter">
+            <div class="loadingBarInner"></div>
+    </div>
+  </div>
+</div>
+<div id="triangle-down">
+    <div></div>
+    </div>
+<br>
+
+<div id="progressbar">
+    <div></div>
+    </div>
+
+     <main style="border: 2px; border-style: solid; border-color: #777; padding: 1em;">
+
+    <p style="font-size: 26px"><span class="days" style="color: red"><b>Only 3 days left</b></span> to fund this project.</p>
+    <p style="font-size: 26px">  Join the <strong>42</strong> other donors who have already supported this project. Every dollar helps.</p>
+
+
+        <strong><input type="text" id="amount" name="amount" placeholder="$ 50" style="height: 80px; width: 200px; font-size: 30px; border-radius: 5px"></strong>
+
+        <button style="background-color: #1CBC2C; color: white; font-size: 30px; height: 80px; width: 200px; margin: 15px; border-radius: 5px;" type="button" class="button"><b>Give Now</b></button>
+        <br>
+         <p style="color: #20A1D4; font-size: 30px"><span class ="give"><i>Why give $50?</i></p>
+    </div></main>
+
+        <div class = opt-button>
+          <button style="float: left;" type="button" id="opt1"><b>Save for later</b></button>
+          <button style="float: right;" type="button" id="opt2"><b>Tell your friends</b></button>
+        </div>
+</body>
+  </html>
